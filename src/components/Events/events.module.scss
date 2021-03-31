@@ -1,0 +1,100 @@
+.container {
+    padding: 0 150px;
+    margin-bottom: 55px;
+}
+
+.header {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 25px;
+}
+.title {
+    color: #0f3352;
+    font-size: 36px;
+    line-height: 1.28;
+}
+.slideButton {
+    width: 40px;
+    height: 40px;
+    color: #0a71bb;
+    background: #fff;
+    font-weight: bold;
+    font-size: 16px;
+
+}
+.slideButton:first-child {
+    margin-right: 8px;
+}
+.buttonsContainer {
+    margin-left: auto;
+}
+.eventsList {
+    list-style: none;
+    display: flex;
+}
+.event {
+    background: #fff;
+    width: calc((100% - 20px) / 2);
+    margin-right: 20px;
+    padding: 0 25px;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.1), 0 2px 34px 0 rgba(0, 0, 0, 0.1);
+}
+.event:last-child {
+    margin-right: 0;
+    margin-top: -4px;
+}
+.eventStatus {
+    width: 70px;
+    height: 24px;
+    color: #fff;
+    background: #8fa0ae;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -4px;
+    margin-bottom: 11px;
+}
+.eventTitle {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.56;
+    color: #0f3352;
+
+}
+.text {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.71;
+    color: #0f3352;
+    margin-bottom: 30px;
+}
+.findList {
+    list-style: none;
+
+}
+.findItem {
+    display: flex;
+    align-items: center;
+}
+.findItem:first-child {
+    margin-bottom: 5px;
+}
+.findItem:nth-child(2) {
+    margin-bottom: 22px;
+}
+.icon {
+    width: 26px;
+    height: 26px;
+    margin-right: 20px;
+}
+.eventFind {
+    font-size: 12px;
+    line-height: 2;
+    color: #8fa0ae;
+}
+.eventFind:first-child {
+    margin-bottom: 5px;
+}
+.eventFinde:nth-child(2) {
+    margin-bottom: 25px;
+}

@@ -1,0 +1,37 @@
+.container {
+    padding: 0 150px;
+    margin-bottom: 55px;
+}
+.title {
+    color: #0f3352;
+    font-size: 36px;
+    line-height: 1.28;
+    margin-bottom: 17px;
+}
+.contentContainer {
+    display: flex;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.1);
+    padding: 28px 48px 0px 24px;
+    background-color: #ffffff;
+}
+.text {
+    max-width: 540px;
+    margin: 0 0 25px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.71;
+    color: #0f3352;
+}
+.button {
+    width: 180px;
+    height: 38px;
+    background-color: #0a71bb;
+    color: #fff
+}
+.image {
+    margin-left: auto;
+    width: 428px;
+    height: 253px;
+    margin-top: -120px;
+}

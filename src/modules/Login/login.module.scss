@@ -1,0 +1,48 @@
+.container {
+    margin-top: 90px;
+}
+.title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #0f3352;
+    margin-bottom: 18px;
+}
+.text {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #8fa0ae;
+    margin-bottom: 40px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+}
+.input {
+    width: 360px;
+    height: 24px;
+    border: 0;
+    border-bottom: 1px solid #8fa0ae;
+    margin-bottom: 66px;
+}
+.input:first-child {
+    margin-bottom: 40px;
+}
+
+.input::placeholder {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 2;
+    color: #8fa0ae;
+}
+
+.formText {
+    font-size: 14px;
+    margin-bottom: 107px;
+}

@@ -1,0 +1,85 @@
+.container {
+    display: flex;
+    padding-top: 35px;
+    position: relative;
+    padding-left: 182px;
+    background-color: lightgray;
+    padding-right: 140px;
+    padding-bottom: 87px;
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: #0f3352;
+    margin-bottom: 50px;
+    max-width: 372px;
+}
+.text {
+    max-width: 505px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin-bottom: 43px;
+}
+.sliderControls {
+    display: flex;
+    position: relative;
+    align-items: center;
+
+}
+.button {
+    width: 180px;
+    height: 38px;
+    color: #fff;
+    background: #0a71bb;
+    margin-right: 77px;
+}
+.list {
+    display: flex;
+    list-style: none;
+}
+.listItem:first-child {
+    background: #0a71bb;
+    opacity: 100%;
+}
+.listItem:last-child {
+    margin-right: 0;
+}
+
+.listItem {
+    width: 8px;
+    height: 8px;
+    background: #f8f8f9;
+    margin-right: 8px;
+    opacity: 20%;
+}
+.controls {
+    display: flex;
+    position: absolute;
+    left: 411px;
+    bottom: 6px;
+    margin-right: 14px;
+}
+
+.slideButton {
+    width: 40px;
+    height: 40px;
+    color: #0a71bb;
+    background: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: auto;
+
+}
+.slideButton:first-child {
+    margin-right: 8px;
+}
+
+.mainImage {
+    max-width: 369px;
+    max-height: 357px;
+    margin-left: auto;
+
+}
+
