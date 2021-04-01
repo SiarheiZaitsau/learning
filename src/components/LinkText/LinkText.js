@@ -1,8 +1,14 @@
 import React from 'react'
 import styles from './linkText.module.scss'
+import { Link } from 'react-router-dom'
+
 function LinkText(props) {
-    const { text } = props
-    return <a className={styles.link}>{text}</a>
+    const { text, link } = props
+    return (
+        <Link to={`/${link}`} className={styles.link}>
+            {text}
+        </Link>
+    )
 }
 
 export default LinkText

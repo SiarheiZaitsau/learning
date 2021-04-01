@@ -1,37 +1,33 @@
 import React from 'react'
-import AuthContainer from '../../components/AuthContainer/AuthContainer'
 import styles from './login.module.scss'
 import LinkText from '../../components/LinkText/LinkText'
 import Button from '../../components/Button/Button'
-
+import Form from '../../components/Form/Form'
 import { ReactComponent as Logo } from '../../assets/logo-white.svg'
+import Input from '../../components/Input/Input'
+import AuthContainer from '../../components/AuthContainer/AuthContainer'
 function Login() {
     return (
         <div className={styles.container}>
-            <div className={styles.main}>
+            <AuthContainer>
                 <h2 className={styles.title}> Авторизация </h2>
                 <p className={styles.text}>
                     Если у вас ещё нет аккаунта, мы можете{' '}
-                    <LinkText text="оставить заявку на регистрацию." />
+                    <LinkText
+                        link="register"
+                        text="оставить заявку на регистрацию."
+                    />
                 </p>
-                <form className={styles.form}>
-                    <input
-                        className={styles.input}
-                        type="text"
-                        placeholder="E-mail"
-                    />
-                    <input
-                        className={styles.input}
-                        type="text"
-                        placeholder="Пароль"
-                    />
+                <Form>
+                    <Input placeholder="E-mail" />
+                    <Input last={true} placeholder="Пароль" />
                     <p className={styles.formText}>
                         {' '}
                         <LinkText text="Забыли пароль?" />{' '}
                     </p>
                     <Button className={styles.button} text="Войти" />
-                </form>
-            </div>
+                </Form>
+            </AuthContainer>
             <div className={styles.background}>
                 <Logo className={styles.logo} />
             </div>

@@ -1,5 +1,6 @@
 .container {
     display: flex;
+    max-height: 100vh;
 }
 .main {
     width: 100%;
@@ -27,24 +28,6 @@
 .form {
     display: flex;
     flex-direction: column;
-}
-.input {
-    max-width: 360px;
-    height: 24px;
-    border: 0;
-    border-bottom: 1px solid #8fa0ae;
-    margin-bottom: 66px;
-}
-.input:first-child {
-    margin-bottom: 40px;
-}
-
-.input::placeholder {
-    font-family: Roboto;
-    font-size: 12px;
-    font-weight: normal;
-    line-height: 2;
-    color: #8fa0ae;
 }
 
 .formText {
@@ -119,19 +102,13 @@
         color: #8fa0ae;
         margin-bottom: 43px;
     }
-    .form {
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-    .input {
-        width: 100%;
-        margin-bottom: 29px;
-    }
     .formText {
         order: 5;
         margin-top: 12px;
         margin-bottom: 0;
+    }
+    .last {
+        margin-bottom: 33px;
     }
     .background::after {
         position: absolute;
@@ -141,6 +118,7 @@
         content: '';
         border-left: 1000px solid #fff;
         border-top: 60px solid transparent;
+        overflow: hidden;
     }
 }
 @media (max-width: 1000px) {
