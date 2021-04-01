@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import styles from './authContainer.module.scss'
 import logo from '../../assets/logo-white@3x.png'
 function AuthContainer(props) {
@@ -8,6 +8,6 @@ function AuthContainer(props) {
             {props.children}
         </div>
     )
-  }
-  
-  export default AuthContainer;
+}
+
+export default AuthContainer

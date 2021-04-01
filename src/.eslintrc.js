@@ -3,10 +3,8 @@ module.exports = {
         "browser": true,
         "es2021": true
     },
-    "extends":[ 
-        "eslint:recommended",
-        "plugin:jest/recommended",
-    ],
+    "extends": ["react-app", "plugin:prettier/recommended"],
+    "rules": {},
     "parserOptions": {
         "ecmaFeatures": {
             "jsx": true
@@ -18,5 +16,5 @@ module.exports = {
         "react"
     ],
     "rules": {
-    }
+    },
 };
