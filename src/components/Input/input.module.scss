@@ -3,7 +3,6 @@
     height: 24px;
     border: 0;
     border-bottom: 1px solid #8fa0ae;
-    margin-bottom: 37px;
 }
 .input::placeholder {
     font-family: Roboto;
@@ -12,12 +11,13 @@
     line-height: 2;
     color: #8fa0ae;
 }
-.lastInput {
-    margin-bottom: 33px !important;
-}
-@media (max-width: 1000px) {
+
+@media (max-width: 1024px) {
     .input {
-        width: 100%;
-        margin-bottom: 29px;
+        width: 328px;
+    }
+    .input::placeholder {
+        line-height: 1.5;
+        font-size: 16px;
     }
 }

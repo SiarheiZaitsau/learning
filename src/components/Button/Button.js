@@ -1,9 +1,9 @@
 import React from 'react'
 import styles from './button.module.scss'
-
+import cn from 'classnames'
 function Button(props) {
-    const { text } = props
-    return <button className={styles.button}> {text}</button>
+    const { children, className } = props
+    return <button className={styles.button}> {children} </button>
 }
 
 export default Button
