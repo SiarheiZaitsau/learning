@@ -5,7 +5,6 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    padding-bottom: 4vh;
     padding-left: 110px;
 }
 @media (max-width: 1024px) {
@@ -15,10 +14,10 @@
         align-items: flex-start;
         justify-content: flex-start;
         height: 100%;
-        padding-bottom: 0;
-        padding-left: 64px;
-        padding-top: 179px;
-        max-width: 392px;
+        // padding-bottom: 0;
+        // padding-left: 64px;
+        // padding-top: 179px;
+        // max-width: 392px;
     }
 }
 @media (max-width: 768px) {
@@ -29,13 +28,13 @@
         align-items: center;
         justify-content: center;
         height: 100%;
-        padding-bottom: 209px;
+        // padding-bottom: 209px;
     }
 }
 @media (max-width: 360px) {
     .main {
         justify-content: flex-start;
-        padding: 0 16px;
-        padding-top: 27px;
+        // padding: 0 16px;
+        // padding-top: 27px;
     }
 }

@@ -10,7 +10,7 @@ import cn from 'classnames'
 function Login() {
     return (
         <div className={styles.container}>
-            <AuthContainer>
+            <AuthContainer className={styles.main}>
                 <h2 className={styles.title}> Авторизация </h2>
                 <p className={styles.text}>
                     Если у вас ещё нет аккаунта, мы можете{' '}
