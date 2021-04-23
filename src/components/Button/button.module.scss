@@ -3,6 +3,10 @@
     background-color: #0a71bb;
     color: #fff;
 }
+
+.outlined {
+    border: 1px solid blue;
+}
 @media (max-width: 1024px) {
     .button {
         height: 40px;

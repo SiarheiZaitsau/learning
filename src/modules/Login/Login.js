@@ -22,13 +22,14 @@ function Login() {
                     <Input
                         placeholder="E-mail"
                         className={styles.input}
-                        type={'text'}
+                        type="text"
                     />
                     <Input
                         placeholder="Пароль"
                         className={cn(styles.input, styles.lastInput)}
                         type={'password'}
                     />
+                    {/* TODO: delete p*/}
                     <p className={styles.formText}>
                         {' '}
                         <Link> Забыли пароль? </Link>
