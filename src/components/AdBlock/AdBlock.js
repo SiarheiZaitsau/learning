@@ -1,6 +1,9 @@
 import React from 'react'
 import styles from './adblock.module.scss'
 import MainImage from '../../assets/mainImage.png'
+import Button from '../Button/Button'
+import SliderButtons from '../Slider/SliderButtons'
+import SliderControls from '../Slider/SliderControls'
 function AdBlock() {
     return (
         <div className={styles.container}>
@@ -14,18 +17,9 @@ function AdBlock() {
                     исследования процессов старения
                 </p>
                 <div className={styles.sliderControls}>
-                    <button className={styles.button}> Подробнее</button>
-                    <ul className={styles.list}>
-                        <li className={styles.listItem}></li>
-                        <li className={styles.listItem}></li>
-                        <li className={styles.listItem}></li>
-                        <li className={styles.listItem}></li>
-                        <li className={styles.listItem}></li>
-                    </ul>
-                    <div className={styles.controls}>
-                        <button className={styles.slideButton}>&#5176;</button>
-                        <button className={styles.slideButton}>&#5171;</button>
-                    </div>
+                    <Button className={styles.button}> Подробнее</Button>
+                    <SliderControls />
+                    <SliderButtons className={styles.controls} />
                 </div>
             </div>
             <img className={styles.mainImage} src={MainImage}></img>

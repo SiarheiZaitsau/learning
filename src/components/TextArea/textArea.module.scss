@@ -1,0 +1,40 @@
+.textarea {
+    width: 100%;
+    border-bottom: 1px solid #8fa0ae;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-bottom: 8px;
+    overflow: hidden;
+    resize: none;
+}
+.textarea::placeholder {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.71;
+    color: #0f3352;
+}
+.textarea[placeholder] {
+    text-overflow: ellipsis;
+}
+.textarea[placeholder] {
+    text-overflow: ellipsis;
+}
+::-moz-placeholder {
+    text-overflow: ellipsis;
+} /* firefox 19+ */
+.textarea:-moz-placeholder {
+    text-overflow: ellipsis;
+}
+
+.inputLength {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.71;
+    color: #0f3352;
+    text-align: end;
+    margin-bottom: 45px;
+}
+.textarea:focus {
+    outline: none;
+}

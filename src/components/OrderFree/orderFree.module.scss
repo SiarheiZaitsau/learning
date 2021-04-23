@@ -1,6 +1,7 @@
 .container {
     padding: 0 150px;
-    margin-bottom: 55px;
+    background: #fff;
+    padding-top: 55px;
 }
 .title {
     color: #0f3352;
@@ -10,9 +11,10 @@
 }
 .contentContainer {
     display: flex;
-    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.1), 0 2px 34px 0 rgba(0, 0, 0, 0.1);
     padding: 28px 48px 0px 24px;
     background-color: #ffffff;
+    padding-bottom: 25px;
 }
 .text {
     max-width: 540px;
@@ -27,11 +29,11 @@
     width: 180px;
     height: 38px;
     background-color: #0a71bb;
-    color: #fff
+    color: #fff;
 }
 .image {
     margin-left: auto;
-    width: 428px;
-    height: 253px;
-    margin-top: -120px;
+    width: 400px;
+    height: 230px;
+    margin-top: -100px;
 }

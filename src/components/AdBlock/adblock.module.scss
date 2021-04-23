@@ -26,7 +26,6 @@
     display: flex;
     position: relative;
     align-items: center;
-
 }
 .button {
     width: 180px;
@@ -62,24 +61,8 @@
     margin-right: 14px;
 }
 
-.slideButton {
-    width: 40px;
-    height: 40px;
-    color: #0a71bb;
-    background: #fff;
-    font-weight: bold;
-    font-size: 16px;
-    margin-left: auto;
-
-}
-.slideButton:first-child {
-    margin-right: 8px;
-}
-
 .mainImage {
     max-width: 369px;
     max-height: 357px;
     margin-left: auto;
-
 }
-

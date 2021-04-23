@@ -1,6 +1,7 @@
 .container {
     padding: 0 150px;
     background: #f8f8f9;
+    padding-top: 50px;
 }
 .header {
     display: flex;
@@ -15,7 +16,6 @@
 .headerText {
     color: #0a71bb;
     font-size: 14px;
-    margin-left: auto;
     font-weight: bold;
 }
 .nextIcon {
@@ -26,11 +26,10 @@
 .list {
     list-style: none;
     display: flex;
-    margin-bottom: 56px;
 }
 .listItem {
     margin-right: 15px;
-    width: calc((100% - 15px * 3) / 4); 
+    width: calc((100% - 15px * 3) / 4);
     background: #fff;
     padding-bottom: 12px;
     box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.1), 0 2px 34px 0 rgba(0, 0, 0, 0.1);
@@ -53,6 +52,9 @@
     height: 227px;
     margin: auto;
     margin-bottom: -26px;
+    max-height: 100%;
+    object-fit: contain;
+    max-width: 100%;
 }
 .secondImage {
     height: 227px;
@@ -64,7 +66,7 @@
     height: 140px;
     width: 165px;
     margin: auto;
-    margin-bottom: -26px; 
+    margin-bottom: -26px;
 }
 .fourthImage {
     width: 145px;
@@ -87,21 +89,28 @@
     font-weight: 300;
     margin-bottom: 32px;
 }
-.priceList {
-    list-style: none;
-    color: #8fa0ae;
-}
-.priceItem {
+// .priceList {
+//     list-style: none;
+//     color: #8fa0ae;
+// }
+// .priceItem {
+//     display: flex;
+//     align-items: center;
+// }
+// .price {
+//     font-size: 18px;
+//     font-weight: bold;
+// }
+// .description {
+//     text-align: right;
+//     font-size: 13px;
+//     color: #999999;
+//     margin-left: auto;
+// }
+.button {
+    border: 0;
+    background: transparent;
     display: flex;
-    align-items: center;
-}
-.price {
-    font-size: 18px;
-    font-weight: bold;
-}
-.description {
-    text-align: right;
-    font-size: 13px;
-    color: #999999;
     margin-left: auto;
+    align-items: center;
 }

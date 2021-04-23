@@ -1,20 +1,50 @@
 import React from 'react'
 import styles from './events.module.scss'
-import Shedule from '../../assets/ldate@3x.png'
-import Place from '../../assets/lplace@3x.png'
+import Status from '../Status/Status'
+import EventFind from './EventFind'
+import SliderButtons from '../Slider/SliderButtons'
 function Events() {
+    const data = [
+        {
+            status: 'Online',
+            title: 'Конференция по лечению тяжелых форм акне изотретиноином',
+            text:
+                'Спикерами конференции станут такие «звезды» косметологии, как Ольга Катханова, Евгений Асеев, Сергей Ахтямов, Марина Дунаевская, Римма Минасьян, Ирина Кошелева и многие другие, которые смогут передать ценные знания всем участникам конференции.',
+            date: '17 - 25 января 2018',
+            place: 'Институт Прикладной Эстетики «Лаки Хаус», Ростов-на-Дону',
+        },
+        {
+            status: 'Offline',
+            title:
+                'Акне. Лечение и базовый уход. VIII Научно-практическая конференция дерматовенерологов и косметологов',
+            text:
+                'Акне является одним из наиболее часто встречающихся заболеваний в практике врача дерматовенеролога и косметолога. Широкая распространенность заболевания, его значительное влияние на качество жизни больных обусловливают необходимость разработки…',
+            date: '17 - 25 января 2018',
+            place: 'Институт Прикладной Эстетики «Лаки Хаус», Ростов-на-Дону',
+        },
+    ]
     return (
         <div className={styles.container}>
             <div className={styles.header}>
                 <h2 className={styles.title}> Мероприятия </h2>
-                <div className={styles.buttonsContainer}>
-                    <button className={styles.slideButton}> &#5176;</button>
-                    <button className={styles.slideButton}> &#5171;</button>
-                </div>
+                <SliderButtons className={styles.buttonsContainer} />
             </div>
             <ul className={styles.eventsList}>
-                <li className={styles.event}>
-                    <div className={styles.eventStatus}> Online</div>
+                {data.map((item) => {
+                    return (
+                        <li className={styles.event}>
+                            <Status className={styles.eventStatus}>
+                                {' '}
+                                {item.status}
+                            </Status>
+                            <h3 className={styles.eventTitle}> {item.title}</h3>
+                            <p className={styles.text}>{item.text}</p>
+                            <EventFind />
+                        </li>
+                    )
+                })}
+                {/* <li className={styles.event}>
+                    <Status className={styles.eventStatus}> Online</Status>
                     <h3 className={styles.eventTitle}>
                         {' '}
                         Конференция по лечению тяжелых форм акне изотретиноином
@@ -26,24 +56,10 @@ function Events() {
                         Кошелева и многие другие, которые смогут передать ценные
                         знания всем участникам конференции.
                     </p>
-                    <ul className={styles.findList}>
-                        <li className={styles.findItem}>
-                            <img src={Shedule} className={styles.icon} />
-                            <p className={styles.eventFind}>
-                                17 - 25 января 2018
-                            </p>
-                        </li>
-                        <li className={styles.findItem}>
-                            <img src={Place} className={styles.icon} />
-                            <p className={styles.eventFind}>
-                                Институт Прикладной Эстетики «Лаки Хаус»,
-                                Ростов-на-Дону
-                            </p>
-                        </li>
-                    </ul>
+                    <EventFind />
                 </li>
                 <li className={styles.event}>
-                    <p className={styles.eventStatus}> Offline</p>
+                    <Status className={styles.eventStatus}> Offline </Status>
                     <h3 className={styles.eventTitle}>
                         {' '}
                         Акне. Лечение и базовый уход. VIII Научно-практическая
@@ -57,22 +73,8 @@ function Events() {
                         значительное влияние на качество жизни больных
                         обусловливают необходимость разработки…
                     </p>
-                    <ul className={styles.findList}>
-                        <li className={styles.findItem}>
-                            <img src={Shedule} className={styles.icon} />
-                            <p className={styles.eventFind}>
-                                17 - 25 января 2018
-                            </p>
-                        </li>
-                        <li className={styles.findItem}>
-                            <img src={Place} className={styles.icon} />
-                            <p className={styles.eventFind}>
-                                Институт Прикладной Эстетики «Лаки Хаус»,
-                                Ростов-на-Дону
-                            </p>
-                        </li>
-                    </ul>
-                </li>
+                    <EventFind />
+                </li> */}
             </ul>
         </div>
     )

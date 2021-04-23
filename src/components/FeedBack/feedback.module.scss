@@ -1,6 +1,6 @@
 .container {
-    padding: 0 150px;
-    margin-bottom: 56px;
+    padding: 55px 150px;
+    background: #fff;
 }
 .title {
     color: #0f3352;
@@ -20,70 +20,7 @@
     color: #8fa0ae;
     margin-bottom: 8px;
 }
-.select {
-    display: block;
-    font-size: 14px;
-    font-weight: 300;
-    padding: 7px 16px 9px;
-    color: #444;
-    color: #0f3352;
-    line-height: 1.71;
-    width: 322px;
-    height: 40px;
-    border: solid 1px #8fa0ae;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
-    background-color: #fff;
-    background-image: url('../../assets/down@3x.png');
-    background-repeat: no-repeat, repeat;
-    background-position: right 0.7em top 50%, 0 0;
-    background-size: 0.65em auto, 100%;
-    margin-bottom: 31px;
-}
-.select::-ms-expand {
-    display: none;
-}
-.select:hover {
-}
-.select-css:focus {
-    outline: none;
-}
-.select option {
-    font-weight: normal;
-}
-*[dir='rtl'] .select-css,
-:root:lang(ar) .select-css,
-:root:lang(iw) .select-css {
-    background-position: left 0.7em top 50%, 0 0;
-    padding: 0.6em 0.8em 0.5em 1.4em;
-}
-.input {
-    width: 100%;
-    border-bottom: 1px solid #8fa0ae;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    padding-bottom: 8px;
-}
-.input::placeholder {
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 1.71;
-    color: #0f3352;
-}
-.input[placeholder] {
-    text-overflow: ellipsis;
-}
-input[placeholder] {
-    text-overflow: ellipsis;
-}
-::-moz-placeholder {
-    text-overflow: ellipsis;
-} /* firefox 19+ */
-input:-moz-placeholder {
-    text-overflow: ellipsis;
-}
+
 .button {
     width: 180px;
     height: 38px;
@@ -92,12 +29,4 @@ input:-moz-placeholder {
     font-weight: bold;
     text-align: center;
     color: #0a71bb;
-}
-.inputLength {
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 1.71;
-    color: #0f3352;
-    text-align: end;
-    margin-bottom: 45px;
 }

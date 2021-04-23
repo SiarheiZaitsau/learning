@@ -1,0 +1,36 @@
+.buttons {
+    display: flex;
+}
+
+.sliderButton {
+    width: 40px;
+    height: 40px;
+    color: #0a71bb;
+    background: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: auto;
+}
+.sliderButton:first-child {
+    margin-right: 8px;
+}
+
+.list {
+    display: flex;
+    list-style: none;
+}
+.listItem:first-child {
+    background: #0a71bb;
+    opacity: 100%;
+}
+.listItem:last-child {
+    margin-right: 0;
+}
+
+.listItem {
+    width: 8px;
+    height: 8px;
+    background: #f8f8f9;
+    margin-right: 8px;
+    opacity: 20%;
+}

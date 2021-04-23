@@ -1,0 +1,19 @@
+.priceList {
+    list-style: none;
+    color: #8fa0ae;
+    padding: 0 24px;
+}
+.priceItem {
+    display: flex;
+    align-items: center;
+}
+.price {
+    font-size: 18px;
+    font-weight: bold;
+}
+.description {
+    text-align: right;
+    font-size: 13px;
+    color: #999999;
+    margin-left: auto;
+}

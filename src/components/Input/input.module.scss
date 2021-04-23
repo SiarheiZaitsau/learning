@@ -3,6 +3,9 @@
     height: 24px;
     border: 0;
     border-bottom: 1px solid #8fa0ae;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 2;
 }
 .input::placeholder {
     font-family: Roboto;
@@ -11,13 +14,26 @@
     line-height: 2;
     color: #8fa0ae;
 }
+.input:focus {
+    border-color: #0a71bb;
+    outline: 0;
+}
 
 @media (max-width: 1024px) {
     .input {
-        width: 328px;
+        line-height: 1.5;
     }
     .input::placeholder {
         line-height: 1.5;
         font-size: 16px;
+    }
+}
+@media (max-width: 360px) {
+    .input {
+        font-size: 12px;
+    }
+    .input::placeholder {
+        line-height: 1.5;
+        font-size: 12px;
     }
 }

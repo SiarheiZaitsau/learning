@@ -17,14 +17,14 @@ body {
 @font-face {
     font-family: 'dinAlternateBold';
     src: local('dinAlternateBold'),
-        url('./fonts//DIN\ Alternate\ Bold.otf') format('otf');
+        url('./fonts//DIN\ Alternate\ Bold.ttf') format('ttf');
     font-family: 'dinAlternate';
-    src: local('dinAlternate'),
-        url('./fonts/DIN\ Alternate\ Regular.otf') format('otf');
+    src: local('dinAlternate'), url('./fonts/DIN\ Alternate.ttf') format('ttf');
 }
 html {
     width: 100%;
     height: 100%;
+    background: #f8f8f9;
 }
 body {
     width: 100%;
