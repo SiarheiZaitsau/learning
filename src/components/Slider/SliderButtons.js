@@ -7,8 +7,8 @@ function SliderButtons(props) {
     const { className } = props
     return (
         <div className={cn(styles.buttons, className)}>
-            <button className={styles.sliderButton}>&#5176;</button>
-            <button className={styles.sliderButton}>&#5171;</button>
+            <button className={cn(styles.sliderButton)}>&#5176;</button>
+            <button className={cn(styles.sliderButton)}>&#5171;</button>
         </div>
     )
 }

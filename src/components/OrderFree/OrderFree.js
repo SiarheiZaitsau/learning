@@ -6,15 +6,15 @@ function OrderFree() {
         <div className={styles.container}>
             <h2 className={styles.title}> Закажите мини-образцы </h2>
             <div className={styles.contentContainer}>
-                <div>
+                <div className={styles.butTextContainer}>
                     <p className={styles.text}>
                         Закажите мини-образцы совершенно бесплатно и получите
                         совершенно новые результаты по уходу за кожей вашего
                         тела!
                     </p>
-                    <button className={styles.button}>Заказть</button>
+                    <img className={styles.image} src={AllProducts} />
                 </div>
-                <img className={styles.image} src={AllProducts} />
+                <button className={styles.button}>Заказть</button>
             </div>
         </div>
     )

@@ -10,7 +10,7 @@ function Header() {
             <p className={styles.text}> У вас мероприятие через 3 дня </p>
             <Button className={styles.first}> Перейти к мероприятию </Button>
 
-            <button className={styles.second}> Закрыть </button>
+            <Button className={styles.second}> Закрыть </Button>
         </div>
     )
 }

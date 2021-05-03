@@ -18,7 +18,7 @@ function AdBlock() {
                 </p>
                 <div className={styles.sliderControls}>
                     <Button className={styles.button}> Подробнее</Button>
-                    <SliderControls />
+                    <SliderControls className={styles.dots} />
                     <SliderButtons className={styles.controls} />
                 </div>
             </div>

@@ -5,7 +5,7 @@ import cn from 'classnames'
 function SliderControls(props) {
     const { className } = props
     return (
-        <ul className={styles.list}>
+        <ul className={cn(styles.list, className)}>
             <li className={styles.listItem}></li>
             <li className={styles.listItem}></li>
             <li className={styles.listItem}></li>

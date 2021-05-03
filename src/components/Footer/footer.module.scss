@@ -8,20 +8,18 @@
 }
 .allRules {
     font-weight: normal;
-    font-size: 12px;
+    font-size: 0.856rem;
     color: #ffffff;
     margin-right: 32px;
 }
 
 .link {
     margin-left: 115px;
-}
-
-.privacyPolicy {
-    font-size: 12px;
+    font-size: 0.856rem;
     font-weight: normal;
     color: #ffffff;
 }
+
 .icons {
     display: flex;
 }
@@ -29,4 +27,31 @@
     margin-left: auto;
     width: 133px;
     height: 34px;
+}
+@media (max-width: 1250px) {
+    .container {
+        padding: 0 75px;
+    }
+}
+@media (max-width: 768px) {
+    .link {
+        margin-left: 25px;
+    }
+    .logo {
+        width: 80px;
+        height: 23px;
+    }
+    .container {
+        padding: 0 25px;
+    }
+    @media (max-width: 768px) {
+        .logo {
+            display: none;
+        }
+    }
+}
+@media (max-width: 520px) {
+    .allRules {
+        margin-right: 16px;
+    }
 }

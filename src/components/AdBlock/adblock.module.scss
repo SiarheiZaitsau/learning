@@ -10,7 +10,7 @@
 
 .title {
     font-family: 'Roboto', sans-serif;
-    font-size: 36px;
+    font-size: 2.57rem;
     font-weight: bold;
     color: #0f3352;
     margin-bottom: 50px;
@@ -21,6 +21,7 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     margin-bottom: 43px;
+    font-size: 1rem;
 }
 .sliderControls {
     display: flex;
@@ -54,15 +55,81 @@
     opacity: 20%;
 }
 .controls {
-    display: flex;
-    position: absolute;
-    left: 411px;
-    bottom: 6px;
-    margin-right: 14px;
+    margin-left: 25px;
 }
 
 .mainImage {
     max-width: 369px;
     max-height: 357px;
     margin-left: auto;
+}
+@media (max-width: 1250px) {
+    .container {
+        padding-right: 75px;
+        padding-left: 85px;
+    }
+    .mainImage {
+        max-width: 269px;
+        max-height: 257px;
+    }
+}
+@media (max-width: 1024px) {
+    .title {
+        margin-bottom: 50px;
+    }
+    .text {
+        max-width: 350px;
+        margin-bottom: 21px;
+    }
+    .button {
+        margin-right: 40px;
+    }
+    .controls {
+        left: 0px;
+        top: 55px;
+    }
+}
+@media (max-width: 768px) {
+    .mainImage {
+        max-width: 150px;
+        max-height: 145px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .container {
+        padding-right: 45px;
+        padding-left: 55px;
+    }
+}
+@media (max-width: 666px) {
+    .container {
+        flex-direction: column;
+    }
+    .mainImage {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+    .controls {
+        margin-left: auto;
+        margin-right: auto;
+        order: 2;
+        margin-bottom: 25px;
+    }
+    .sliderControls {
+        flex-direction: column;
+    }
+    .button {
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+    .text {
+        margin-right: 0;
+    }
+    .title {
+        text-align: center;
+    }
+    .dots {
+        order: 99;
+    }
 }

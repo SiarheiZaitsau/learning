@@ -5,15 +5,19 @@ import Login from '../Login/Login'
 import Register from '../Register/Register'
 function Auth() {
     return (
-        <Switch>
-            <Route exact path="/login">
-                <Login />
-            </Route>
-
-            <Route exact path="/register">
-                <Register />
-            </Route>
-        </Switch>
+        <div>
+            <div className="leftSide">
+                <Switch>
+                    <Route exact path="/auth">
+                        <Login />
+                    </Route>
+                    <Route exact path="/auth/register">
+                        <Register />
+                    </Route>
+                </Switch>
+            </div>
+            <div className="rightSide">Hello</div>
+        </div>
     )
 }
 

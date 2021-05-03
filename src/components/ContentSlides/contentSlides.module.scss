@@ -1,5 +1,5 @@
 .container {
-    margin: 0 150px;
+    padding: 0 150px;
     margin-top: -30px;
     z-index: 1;
     position: relative;
@@ -21,13 +21,14 @@
 }
 .title {
     color: black;
-    font-size: 18px;
+    font-size: 1.285rem;
     font-weight: normal;
     line-height: 1.28;
     margin-bottom: 25px;
 }
 .number {
-    font-size: 36px;
+    font-size: 2.57rem;
+    margin-right: 10px;
 }
 
 .button {
@@ -42,4 +43,38 @@
     background: #0a71bb;
     width: 200px;
     height: 38px;
+}
+@media (max-width: 1250px) {
+    .container {
+        padding: 0 75px;
+        margin-top: -15px;
+    }
+    .button {
+        max-width: 100%;
+    }
+    .listItem {
+        padding: 25px;
+    }
+}
+@media (max-width: 768px) {
+    .list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .listItem {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    .listItem:last-of-type {
+        margin-bottom: 0;
+    }
+}
+@media (max-width: 520px) {
+    .container {
+        padding: 0 25px;
+    }
 }

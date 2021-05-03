@@ -5,7 +5,9 @@
 .link {
     margin-right: 16px;
 }
-
+.link:last-of-type {
+    margin-right: 0;
+}
 .privacyPolicy {
     font-size: 12px;
     font-weight: normal;
@@ -18,4 +20,10 @@
     margin-left: auto;
     width: 133px;
     height: 34px;
+}
+@media (max-width: 768px) {
+    .icon {
+        width: 16px;
+        height: 16px;
+    }
 }

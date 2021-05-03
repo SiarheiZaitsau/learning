@@ -7,7 +7,11 @@ function Link(props) {
     const { to, children, className, isOutLink } = props
 
     if (isOutLink) {
-        return <a href={to}>{children}</a>
+        return (
+            <a className={cn(styles.outSideLink, className)} href={to}>
+                {children}
+            </a>
+        )
     }
 
     return (

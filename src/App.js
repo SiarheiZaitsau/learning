@@ -9,16 +9,15 @@ import {
 } from 'react-router-dom'
 import Register from './modules/Register/Register'
 import Login from './modules/Login/Login'
+import Auth from './modules/Auth/Auth'
+
 function App() {
     return (
         <Router>
             <div className="app">
                 <Switch>
-                    <Route path="/login">
-                        <Login />
-                    </Route>
-                    <Route path="/register">
-                        <Register />
+                    <Route path="/auth">
+                        <Auth />
                     </Route>
                     <Route path="/">
                         <Home />

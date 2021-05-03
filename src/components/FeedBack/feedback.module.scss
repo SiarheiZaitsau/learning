@@ -1,10 +1,9 @@
 .container {
     padding: 55px 150px;
-    background: #fff;
 }
 .title {
     color: #0f3352;
-    font-size: 36px;
+    font-size: 2.57rem;
     line-height: 1.28;
     margin-bottom: 25px;
 }
@@ -28,5 +27,21 @@
     font-size: 14px;
     font-weight: bold;
     text-align: center;
+    background: transparent;
     color: #0a71bb;
+}
+@media (max-width: 1250px) {
+    .container {
+        padding: 55px 75px;
+    }
+}
+@media (max-width: 768px) {
+    .button {
+        width: 100%;
+    }
+}
+@media (max-width: 520px) {
+    .container {
+        padding: 55px 50px;
+    }
 }

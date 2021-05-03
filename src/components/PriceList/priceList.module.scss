@@ -8,12 +8,16 @@
     align-items: center;
 }
 .price {
-    font-size: 18px;
+    font-size: 1.286rem;
     font-weight: bold;
+    margin-bottom: 5px;
+}
+.priceList .priceItem:last-child .price {
+    margin-bottom: 0;
 }
 .description {
     text-align: right;
-    font-size: 13px;
+    font-size: 0.929rem;
     color: #999999;
     margin-left: auto;
 }

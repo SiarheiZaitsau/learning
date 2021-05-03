@@ -5,7 +5,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    padding-right: 40px;
+    padding-right: 150px;
 }
 .container::before {
     content: url('../../assets/info3x.png');
@@ -16,7 +16,7 @@
 }
 .text {
     font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    font-size: 1.286rem;
     font-weight: bold;
     color: #fff;
     line-height: 28px;
@@ -29,11 +29,48 @@
     color: #fff;
     border: 1px solid #fff;
     font-size: 11px;
-    margin-right: 40px;
     margin-left: auto;
     font-family: Roboto;
+    background: transparent;
 }
 .second {
     color: #fff;
     font-size: 11px;
+    background: transparent;
+    width: 197px;
+}
+@media (max-width: 1250px) {
+    .container {
+        padding-right: 75px;
+    }
+    .container::before {
+        content: url('../../assets/info3x.png');
+        position: absolute;
+        left: 75px;
+        overflow: hidden;
+        top: 0;
+    }
+    .text {
+        margin-left: 240px;
+    }
+}
+@media (max-width: 1024px) {
+    .first {
+        width: 150px;
+    }
+    .second {
+        width: 150px;
+    }
+}
+@media (max-width: 768px) {
+    .container::before {
+        content: '';
+    }
+    .container {
+        padding-left: 25px;
+        padding-right: 0;
+    }
+    .text {
+        margin-left: 0;
+    }
 }

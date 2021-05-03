@@ -3,6 +3,7 @@ import styles from './footer.module.scss'
 import Logo from '../../assets/bottomLogo.png'
 import Link from '../Link/Link'
 import Socials from '../Socials/Socials'
+
 function Footer() {
     return (
         <div className={styles.container}>
@@ -10,10 +11,8 @@ function Footer() {
                 © Все права защищены. CaveVe 2018.
             </p>
             <Socials />
-            <Link to={'#'} className={styles.link}>
-                <a className={styles.privacyPolicy}>
-                    Политика конфиденциальности
-                </a>{' '}
+            <Link to={'#'} className={styles.link} isOutLink={true}>
+                Политика конфиденциальности
             </Link>
             <img className={styles.logo} src={Logo} />
         </div>
