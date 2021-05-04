@@ -95,7 +95,7 @@
 }
 @media (max-width: 1250px) {
     .container {
-        padding: 0 75px;
+        padding: 0 30px;
         padding-top: 55px;
     }
 }
@@ -113,8 +113,10 @@
     .event:last-child {
         margin-top: 0;
     }
-}
-@media (max-width: 1024px) {
+    .icon {
+        margin-right: 10px;
+    }
+
     .text {
         max-height: 142px;
     }
@@ -129,8 +131,10 @@
     .title {
         font-size: 2rem;
     }
+    .icon {
+    }
     .container {
-        padding-right: 50px;
-        padding-left: 50px;
+        padding-right: 15px;
+        padding-left: 15px;
     }
 }

@@ -47,21 +47,17 @@
     margin: auto;
 }
 .firstImage {
-    width: 125px;
     margin: auto;
     margin-bottom: -26px;
     max-height: 100%;
     max-width: 100%;
+    max-width: 150px;
 }
 .secondImage {
-    height: 227px;
-    width: 148px;
     margin: auto;
     margin-bottom: -26px;
 }
 .thirdImage {
-    height: 140px;
-    width: 165px;
     margin: auto;
     margin-bottom: -26px;
 }
@@ -96,7 +92,7 @@
 }
 @media (max-width: 1250px) {
     .container {
-        padding: 0 75px;
+        padding: 0 30px;
         padding-top: 50px;
     }
 }
@@ -119,6 +115,14 @@
         margin-bottom: 0;
     }
 }
+@media (max-width: 768px) {
+    .hiddenText {
+        display: none;
+    }
+    .button {
+        max-width: 120px;
+    }
+}
 @media (max-width: 550px) {
     .listItem {
         width: 100%;
@@ -133,7 +137,7 @@
         font-size: 2rem;
     }
     .container {
-        padding-right: 50px;
-        padding-left: 50px;
+        padding-right: 15px;
+        padding-left: 15px;
     }
 }

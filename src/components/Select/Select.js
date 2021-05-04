@@ -32,15 +32,7 @@ function Select(props) {
         setCurrentValue(e.target.value)
     }
     return (
-        <>
-            {/* <select className={styles.select}>
-                // <option className={styles.option}>Без темы</option>
-                // <option className={styles.option}>Apples</option>
-                // <option className={styles.option}>Bananas</option>
-                // <option className={styles.option}>Grapes</option>
-                // <option className={styles.option}>Oranges</option>
-                //{' '}
-            </select> */}
+        <div className={styles.container}>
             <button
                 className={styles.button}
                 value={currentValue}
@@ -82,7 +74,7 @@ function Select(props) {
                     )
                 })}
             </div>
-        </>
+        </div>
     )
 }
 

@@ -2,9 +2,9 @@
     display: flex;
     padding-top: 35px;
     position: relative;
-    padding-left: 182px;
+    padding-left: 150px;
     background-color: lightgray;
-    padding-right: 140px;
+    padding-right: 150px;
     padding-bottom: 87px;
 }
 
@@ -102,34 +102,56 @@
     }
 }
 @media (max-width: 666px) {
-    .container {
-        flex-direction: column;
-    }
     .mainImage {
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
+        margin-top: 0;
+        margin-left: 0;
+        margin-bottom: 25px;
     }
     .controls {
-        margin-left: auto;
-        margin-right: auto;
-        order: 2;
         margin-bottom: 25px;
+        margin-bottom: 10px;
+        position: static;
+        margin-left: 0;
     }
     .sliderControls {
         flex-direction: column;
     }
+    .dots {
+        margin-bottom: 25px;
+    }
     .button {
         margin-right: 0;
-        margin-bottom: 25px;
     }
     .text {
         margin-right: 0;
     }
     .title {
         text-align: center;
+        margin-bottom: 10px;
+        font-size: 2.5rem;
     }
-    .dots {
-        order: 99;
+    .container {
+        display: none;
+    }
+    .mobileContainer {
+        display: flex;
+        padding-top: 35px;
+        position: relative;
+        padding-left: 30px;
+        padding-right: 30px;
+        background-color: lightgray;
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+    .textContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media (min-width: 667px) {
+    .mobileContainer {
+        display: none;
     }
 }

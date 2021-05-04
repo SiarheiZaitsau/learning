@@ -63,6 +63,10 @@ option {
     position: relative;
     // margin-bottom: 31px;
 }
+.container {
+    width: 100%;
+    position: relative;
+}
 
 .optionsContainer {
     display: flex;
@@ -76,8 +80,7 @@ option {
     z-index: 99;
     max-height: 199px;
     overflow-y: scroll;
-    width: 50%;
-    max-width: 322px;
+    width: 322px;
 }
 .option {
     display: flex;
@@ -119,15 +122,10 @@ option {
     transition: transform ease-out 0.25s;
 }
 @media (max-width: 768px) {
-    .optionsContainer {
-        width: 100%;
-    }
-}
-@media (max-width: 500px) {
     .button {
         width: 100%;
     }
     .optionsContainer {
-        width: 50%;
+        width: 100%;
     }
 }

@@ -9,7 +9,7 @@ import cn from 'classnames'
 function Socials(props) {
     const { className } = props
     return (
-        <div className={styles.socials}>
+        <div className={cn(styles.socials, className)}>
             <a className={styles.link}>
                 {' '}
                 <img className={styles.icon} src={Facebook} />{' '}

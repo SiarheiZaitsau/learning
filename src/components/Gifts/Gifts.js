@@ -7,7 +7,7 @@ import Gift3 from '../../assets/gifts3.png'
 import Gift4 from '../../assets/gifts4.png'
 import Button from '../Button/Button'
 import PriceList from '../PriceList/PriceList'
-function Gifts() {
+function Gifts(props) {
     const data = [
         {
             img: Gift1,
@@ -50,13 +50,16 @@ function Gifts() {
             },
         },
     ]
-    console.log(data, 'data')
     return (
         <div className={styles.container}>
             <div className={styles.header}>
                 <h2 className={styles.title}> Каталог подарков </h2>
                 <Button className={styles.button}>
-                    <p className={styles.headerText}> Смотреть все подарки</p>
+                    <p className={styles.headerText}>
+                        {' '}
+                        Смотреть все{' '}
+                        <span className={styles.hiddenText}>подарки </span>
+                    </p>
                     <Next className={styles.nextIcon} />
                 </Button>
             </div>

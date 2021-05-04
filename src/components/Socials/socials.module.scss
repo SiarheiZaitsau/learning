@@ -23,7 +23,16 @@
 }
 @media (max-width: 768px) {
     .icon {
-        width: 16px;
-        height: 16px;
+        width: 25px;
+        height: 25px;
+    }
+}
+@media (max-width: 520px) {
+    .icon {
+        width: 20px;
+        height: 20px;
+    }
+    .link {
+        margin-right: 5px;
     }
 }

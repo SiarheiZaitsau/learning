@@ -10,7 +10,7 @@ function Footer() {
             <p className={styles.allRules}>
                 © Все права защищены. CaveVe 2018.
             </p>
-            <Socials />
+            <Socials className={styles.socials} />
             <Link to={'#'} className={styles.link} isOutLink={true}>
                 Политика конфиденциальности
             </Link>
