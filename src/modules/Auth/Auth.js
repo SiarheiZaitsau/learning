@@ -16,6 +16,7 @@ function Auth() {
                     </Route>
                 </Switch>
             </div>
+            {/* TODO: тут должно быть лого */}
             <div className="rightSide">Hello</div>
         </div>
     )

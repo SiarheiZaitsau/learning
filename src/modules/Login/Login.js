@@ -37,6 +37,7 @@ function Login() {
                     <Button className={styles.button}> Войти </Button>
                 </Form>
             </AuthContainer>
+            {/* TODO: это лого должно быть в Auth */}
             <div className={styles.background}>
                 <Logo className={styles.logo} />
             </div>
