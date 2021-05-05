@@ -1,8 +1,7 @@
 .container {
     display: flex;
     height: 100%;
-}
-.main {
+    flex-direction: column;
     padding-top: 150px;
 }
 .title {
@@ -115,8 +114,8 @@
 }
 @media (max-width: 768px) {
     .container {
-        flex-direction: column-reverse;
         align-items: center;
+        padding-top: 0;
     }
     .background {
         width: 100%;
@@ -226,5 +225,8 @@
     }
     .input {
         width: 60%;
+    }
+    .container {
+        height: auto;
     }
 }

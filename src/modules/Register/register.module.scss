@@ -1,6 +1,9 @@
 .container {
     display: flex;
-    height: 100vh;
+    height: 100%;
+    flex-direction: column;
+    margin-top: 150px;
+    width: 100%;
 }
 .background::before {
     position: absolute;
@@ -139,8 +142,8 @@
 }
 @media (max-width: 768px) {
     .container {
-        flex-direction: column-reverse;
         align-items: center;
+        margin-top: 0;
     }
     .background {
         width: 100%;
@@ -227,6 +230,9 @@
         padding: 0;
         max-width: 100%;
         margin-top: 0;
+    }
+    .container {
+        justify-content: center;
     }
     .title {
         line-height: normal;

@@ -7,6 +7,7 @@ import Gift3 from '../../assets/gifts3.png'
 import Gift4 from '../../assets/gifts4.png'
 import Button from '../Button/Button'
 import PriceList from '../PriceList/PriceList'
+import ProductCard from '../ProductCard/ProductCard'
 function Gifts(props) {
     const data = [
         {
@@ -65,23 +66,7 @@ function Gifts(props) {
             </div>
             <ul className={styles.list}>
                 {data.map((item) => {
-                    return (
-                        <li className={styles.listItem}>
-                            <div className={styles.itemBackground}>
-                                <img
-                                    className={styles.firstImage}
-                                    src={item.img}
-                                />
-                            </div>
-                            <div className={styles.textContainer}>
-                                <h4 className={styles.subTitle}>
-                                    {item.title}
-                                </h4>
-                                <p className={styles.text}>{item.text}</p>
-                            </div>
-                            <PriceList price={item.price} />
-                        </li>
-                    )
+                    return <ProductCard item={item} />
                 })}
             </ul>
         </div>

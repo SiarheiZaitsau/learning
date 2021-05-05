@@ -1,8 +1,8 @@
 import React from 'react'
 import styles from './events.module.scss'
-import Status from '../Status/Status'
-import EventFind from './EventFind'
 import SliderButtons from '../Slider/SliderButtons'
+
+import Event from '../../components/Events/Event'
 function Events() {
     const data = [
         {
@@ -31,50 +31,8 @@ function Events() {
             </div>
             <ul className={styles.eventsList}>
                 {data.map((item) => {
-                    return (
-                        <li className={styles.event}>
-                            <Status className={styles.eventStatus}>
-                                {' '}
-                                {item.status}
-                            </Status>
-                            <h3 className={styles.eventTitle}> {item.title}</h3>
-                            <p className={styles.text}>{item.text}</p>
-                            <EventFind />
-                        </li>
-                    )
+                    return <Event item={item} />
                 })}
-                {/* <li className={styles.event}>
-                    <Status className={styles.eventStatus}> Online</Status>
-                    <h3 className={styles.eventTitle}>
-                        {' '}
-                        Конференция по лечению тяжелых форм акне изотретиноином
-                    </h3>
-                    <p className={styles.text}>
-                        Спикерами конференции станут такие «звезды»
-                        косметологии, как Ольга Катханова, Евгений Асеев, Сергей
-                        Ахтямов, Марина Дунаевская, Римма Минасьян, Ирина
-                        Кошелева и многие другие, которые смогут передать ценные
-                        знания всем участникам конференции.
-                    </p>
-                    <EventFind />
-                </li>
-                <li className={styles.event}>
-                    <Status className={styles.eventStatus}> Offline </Status>
-                    <h3 className={styles.eventTitle}>
-                        {' '}
-                        Акне. Лечение и базовый уход. VIII Научно-практическая
-                        конференция дерматовенерологов и косметологов
-                    </h3>
-                    <p className={styles.text}>
-                        {' '}
-                        Акне является одним из наиболее часто встречающихся
-                        заболеваний в практике врача дерматовенеролога и
-                        косметолога. Широкая распространенность заболевания, его
-                        значительное влияние на качество жизни больных
-                        обусловливают необходимость разработки…
-                    </p>
-                    <EventFind />
-                </li> */}
             </ul>
         </div>
     )

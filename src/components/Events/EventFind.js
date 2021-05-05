@@ -5,20 +5,12 @@ import Shedule from '../../assets/ldate@3x.png'
 import Place from '../../assets/lplace@3x.png'
 
 function EventFind(props) {
-    const { className } = props
+    const { className, text, icon } = props
     return (
-        <ul className={styles.findList}>
-            <li className={styles.findItem}>
-                <img src={Shedule} className={styles.icon} />
-                <p className={styles.eventFind}>17 - 25 января 2018</p>
-            </li>
-            <li className={styles.findItem}>
-                <img src={Place} className={styles.icon} />
-                <p className={styles.eventFind}>
-                    Институт Прикладной Эстетики «Лаки Хаус», Ростов-на-Дону
-                </p>
-            </li>
-        </ul>
+        <li className={styles.findItem}>
+            <img src={icon} className={styles.icon} />
+            <p className={styles.eventFind}>{text}</p>
+        </li>
     )
 }
 

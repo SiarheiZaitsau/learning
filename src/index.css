@@ -22,11 +22,9 @@ body {
     src: local('dinAlternate'), url('./fonts/DIN\ Alternate.ttf') format('ttf');
 }
 html {
-    width: 100%;
-    min-height: 100%;
+    height: 100%;
 }
 body {
-    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;

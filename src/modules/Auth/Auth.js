@@ -3,10 +3,11 @@ import styles from './auth.module.scss'
 import { Route, Switch } from 'react-router'
 import Login from '../Login/Login'
 import Register from '../Register/Register'
+import { ReactComponent as Logo } from '../../assets/logo-white.svg'
 function Auth() {
     return (
-        <div>
-            <div className="leftSide">
+        <div className={styles.authContainer}>
+            <div className={styles.main}>
                 <Switch>
                     <Route exact path="/auth">
                         <Login />
@@ -17,7 +18,9 @@ function Auth() {
                 </Switch>
             </div>
             {/* TODO: тут должно быть лого */}
-            <div className="rightSide">Hello</div>
+            <div className={styles.background}>
+                <Logo className={styles.logo} />
+            </div>
         </div>
     )
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './contentSlides.module.scss'
 import Button from '../Button/Button'
-
+import ContentCard from '../ContentCards/ContentCards'
 const SITE_STATS = [
     {
         number: 132,
@@ -26,17 +26,7 @@ function ContentSlides() {
             <ul className={styles.list}>
                 {SITE_STATS.map((item) => {
                     return (
-                        <li className={styles.listItem}>
-                            <h3 className={styles.title}>
-                                <span className={styles.number}>
-                                    {item.number}
-                                </span>
-                                {item.title}
-                            </h3>
-                            <Button className={styles.button}>
-                                {item.buttonText}
-                            </Button>
-                        </li>
+                        <ContentCard item={item} className={styles.listItem} />
                     )
                 })}
             </ul>
