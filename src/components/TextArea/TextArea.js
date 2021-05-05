@@ -1,17 +1,31 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './textArea.module.scss'
-import cn from 'classnames'
 
 function TextArea(props) {
-    const { placeholder, className } = props
+    const { value: propsValue, maxLength = 500, ...otherAProps } = props
+    const [value, setValue] = useState(propsValue)
+
+    const onChange = (e) => {
+        if (e.target.value.length <= maxLength) {
+            setValue(e.target.value)
+        } else {
+            setValue(e.target.value.slice(0, maxLength))
+        }
+    }
+
     return (
         <div>
             <textarea
                 className={styles.textarea}
-                placeholder={placeholder}
+                value={value}
                 type="text"
+                maxLength
+                onChange={onChange}
+                {...otherAProps}
             />
-            <p className={styles.inputLength}> 233 / 500</p>
+            <p
+                className={styles.inputLength}
+            >{` ${value.length} / ${maxLength}`}</p>
         </div>
     )
 }
